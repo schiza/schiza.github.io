@@ -3,10 +3,13 @@ email: schizunio@gmail.com
 description: >-
   Programmer, nerd, gamer. On games I played - short opinions, recommendations (or quite opposite), thoughts. Not full-fledged reviews.
 baseurl: ""
-url: ""
+url: "https://schiza.github.io"
 twitter_username: sch1za
 github_username: schiza
 steam_username: schizunio
+
+disqus:
+  shortname: schiz-plays
 
 # Build settings
 markdown: kramdown
