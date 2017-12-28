@@ -1,0 +1,14 @@
+title: schiz plays
+email: schizunio@gmail.com
+description: >-
+  Programmer, nerd, gamer. On games I played - short opinions, recommendations (or quite opposite). Not reviews.
+baseurl: ""
+url: ""
+twitter_username: sch1za
+github_username: schiza
+steam_username: schizunio
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
