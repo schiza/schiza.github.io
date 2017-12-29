@@ -7,6 +7,7 @@ steam_link: link_to_steam
 tags:
 - tag1
 - tag2
+playtime: 4h
 ---
 
 content?

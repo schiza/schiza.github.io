@@ -21,6 +21,8 @@ layout: default
       <br>
       <b>My rating:</b> {{ page.rating }}/10
       <br>
+      <b>Playtime:</b> {{ page.playtime }}
+      <br>
       <b>Tags:</b> <span>
 	{% for tag in page.tags %}
 	  {% capture tag_name %}{{ tag }}{% endcapture %}
