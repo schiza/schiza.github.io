@@ -202,6 +202,13 @@
   @include relative-font-size(1.5);
 }
 
+.post-title-home {
+  margin-bottom: $spacing-unit / 6;
+}
+
+.small-tags code {
+  @include relative-font-size(0.75);
+}
 
 
 /**
@@ -246,5 +253,10 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+  }
+
+  .post-summary {
+    background-color: $grey-color-light;
+    padding: $spacing-unit / 6;
   }
 }

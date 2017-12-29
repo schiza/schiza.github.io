@@ -16,9 +16,9 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>
-      <a href="{{ page.steam_link }}" target="_blank">{{ page.title}} on Steam</a>
-      <br>
+    {{ content }}
+
+    <p class="post-summary">
       <b>My rating:</b> {{ page.rating }}/10
       <br>
       <b>Playtime:</b> {{ page.playtime }}
@@ -27,10 +27,13 @@ layout: default
 	{% for tag in page.tags %}
 	  {% capture tag_name %}{{ tag }}{% endcapture %}
 	  <a href="/tag/{{ tag_name }}"><code><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-	{% endfor %}
-      </span>
+	  {% endfor %}
+      <br>
+      <a class="steam-link" href="{{ page.steam_link }}" target="_blank">
+        <span class="icon icon--steam">{% include icon-steam.svg %}</span>
+	{{ page.title}} on Steam
+      </a>
     </p>
-    {{ content }}
   </div>
 
   {% if site.disqus.shortname %}
