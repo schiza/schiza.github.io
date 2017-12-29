@@ -31,7 +31,7 @@ FileUtils.rm_rf(Dir.glob(File.join(tag_dir, "*.md")))
 all_tags.uniq.each do |tag|
   tag_filename = File.join(tag_dir, "#{tag}.md")
   File.open(tag_filename, "w") do |f|
-    content = "---\nlayout: tagpage\ntitle: \"Tag: #{tag}\"\ntag: #{tag}\nrobots: noindex\n---\n"
+    content = "---\nlayout: tagpage\ntitle: \"Tag: #{tag}\"\ntag: #{tag}\ntagpage: true\nrobots: noindex\n---\n"
     f << content
   end
 end
