@@ -11,6 +11,8 @@ steam_username: schizunio
 disqus:
   shortname: schiz-plays
 
+google_analytics: 'UA-111750547-1'
+
 # Build settings
 markdown: kramdown
 plugins:
