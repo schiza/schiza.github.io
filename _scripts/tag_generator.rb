@@ -23,7 +23,7 @@ filenames.each do |filename|
   end
   yaml = relevant_lines.join("\n")
   tags = YAML.load(yaml)["tags"]
-  all_tags += tags
+  all_tags += tags if tags
 end
 
 FileUtils.rm_rf(Dir.glob(File.join(tag_dir, "*.md")))
