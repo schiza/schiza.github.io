@@ -1,5 +1,6 @@
 ---
 layout: post
+game: true
 title: "Game name"
 date: 2017-12-28 16:15:00 +0100
 rating: 5

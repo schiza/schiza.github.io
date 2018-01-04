@@ -1,5 +1,6 @@
 ---
 layout: post
+game: true
 title: "The Lion's Song"
 date: 2017-12-29 11:50:00 +0100
 rating: 8

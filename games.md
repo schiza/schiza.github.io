@@ -4,7 +4,7 @@ title: Games
 permalink: /games/
 ---
 
-{% assign posts_grouped = site.posts | group_by: 'rating' | sort: 'name' | reverse %}
+{% assign posts_grouped = site.posts | where: "game", "true" | group_by: 'rating' | sort: 'name' | reverse %}
 {% for group in posts_grouped %}
   {% assign rating = group.name %}
   {% assign posts = group.items %}
