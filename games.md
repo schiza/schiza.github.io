@@ -9,10 +9,11 @@ permalink: /games/
   {% assign group = posts_grouped | where: "name", rating | first %}
   {% assign posts = group.items | sort: "title" %}
   <h2>{{ rating }}/10</h2>
-  <ul>
+  <ul class="games-list">
     {% for post in posts %}
       <li>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+	<div class="post-excerpt">{{ post.excerpt }}</div>
 	<span>
 	  {% for tag in post.tags %}
 	    <a href="/tag/{{ tag }}"><code><nobr>{{ tag }}</nobr></code>&nbsp;</a>
