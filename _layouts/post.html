@@ -29,10 +29,18 @@ layout: default
 	  <a href="/tag/{{ tag_name }}"><code><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
 	  {% endfor %}
       <br>
+      {% if page.steam_link %}
       <a class="steam-link" href="{{ page.steam_link }}" target="_blank">
         <span class="icon icon--steam">{% include icon-steam.svg %}</span>
-	{{ page.title}} on Steam
+	{{ page.title }} on Steam
       </a>
+      {% endif %}
+      {% if page.custom_link %}
+      <a class="custom-link" href="{{ page.custom_link }}" target="_blank">
+	<span class="icon icon--link">{% include icon-link.svg %}</span>
+	{{ page.custom_link_text }}
+      </a>
+      {% endif %}
     </p>
   </div>
 
