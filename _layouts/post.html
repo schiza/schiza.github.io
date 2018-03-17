@@ -41,6 +41,12 @@ layout: default
 	{{ page.custom_link_text }}
       </a>
       {% endif %}
+      {% if page.custom_link2 %}
+      <a class="custom-link" href="{{ page.custom_link2 }}" target="_blank">
+	<span class="icon icon--link">{% include icon-link.svg %}</span>
+	{{ page.custom_link_text2 }}
+      </a>
+      {% endif %}
     </p>
   </div>
 
